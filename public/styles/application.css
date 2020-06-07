@@ -1,0 +1,27 @@
+.progress {
+  background-color: lightgray;
+  height: 1rem;
+}
+
+.progress > .progress-bar {
+  height: 1rem;
+}
+
+.settings {
+  text-align: right;
+}
+
+.status {
+  text-align: center;
+}
+
+.timer {
+  font-size: 6rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.timer > .timer-separator {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}

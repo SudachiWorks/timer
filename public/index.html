@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>LT Timer</title>
+  <link rel="stylesheet" href="styles/application.css">
+</head>
+<body>
+<header class="header">
+  <section class="settings">
+    <div>
+      <label>Speech Time</label>
+      <select class="settings-speech-time">
+        <option value="180">3 mins</option>
+        <option value="300">5 mins</option>
+        <option value="600">10 mins</option>
+        <option value="900">15 mins</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Discussion Time</label>
+      <select class="settings-discussion-time">
+        <option value="60">1 mins</option>
+        <option value="180">3 mins</option>
+        <option value="300">5 mins</option>
+        <option value="600">10 mins</option>
+        <option value="900">15 mins</option>
+      </select>
+    </div>
+
+    <button class="timer-button">start</button>
+  </section>
+</header>
+
+<hr>
+
+<main>
+  <h3 class="status">
+    <span class="status-stopped">STOP</span>
+    <span class="status-speech">SPEECH</span>
+    <span class="status-discussion">DISCUSSION</span>
+  </h3>
+
+  <div class="progress">
+    <div class="progress-bar"></div>
+  </div>
+
+  <section class="timer">
+    <span class="timer-min">--</span>
+    <span class="timer-separator">:</span>
+    <span class="timer-sec">--</span>
+  </section>
+</main>
+
+<script src="scripts/application.js"></script>
+</body>
+</html>
